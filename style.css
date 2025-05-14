@@ -1,4 +1,69 @@
+/* Background for entire page */
 html {
-    background-color: beige;
-    font-family: "Newsreader", serif;
+  background-color: rgb(240, 240, 226);
+}
+
+body {
+    background-color: rgb(240, 240, 226);
+    color: #2E2E2E;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Navbar override */
+  .navbar {
+    background-color: #A3C4BC !important;
+  }
+  
+  /* Navbar brand + links */
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #2E2E2E !important;
+    font-weight: 600;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #6C757D !important; /* muted gray hover */
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #E3D5CA;
+    border-color: #E3D5CA;
+    color: #2E2E2E;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d6c4b8;
+    border-color: #d6c4b8;
+  }
+  
+  /* Section headers */
+  h2, h5 {
+    color: #2E2E2E;
+  }
+  
+  /* Inputs */
+  input, textarea {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #2E2E2E;
+  }
+  
+  .btn-custom {
+  background-color: #A3C6C4 !important; /* soft teal */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #8DB3B1;
+  color: #ffffff;
+}
+
+.contact-main {
+  background-color: rgb(240, 240, 226)
 }
