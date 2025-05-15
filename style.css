@@ -7,11 +7,25 @@ body {
     background-color: rgb(240, 240, 226);
     color: #2E2E2E;
     font-family: 'Segoe UI', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
   }
   
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   /* Navbar override */
   .navbar {
     background-color: #A3C4BC !important;
+    border-bottom: 4px solid #888; /* Adjust color and thickness */
+    background-color: rgb(240, 240, 226); /* match your theme */
   }
   
   /* Navbar brand + links */
@@ -66,4 +80,8 @@ body {
 
 .contact-main {
   background-color: rgb(240, 240, 226)
+}
+
+.soft-bg {
+  background-color: rgb(240, 240, 226);
 }
