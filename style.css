@@ -85,3 +85,7 @@ body {
 .soft-bg {
   background-color: rgb(240, 240, 226);
 }
+
+.text-justify {
+  text-align: justify;
+}
