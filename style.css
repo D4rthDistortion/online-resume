@@ -120,25 +120,17 @@ body {
   z-index: 2;
 }
 
-/* Set base font families */
-body {
-  font-family: 'Roboto', sans-serif;
+body, li, label, placeholder, p, small{
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
 
-/* Headings use Poppins */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+h1, h2, h3, h4, h5, h6, .nav-link, .btn, footer {
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
 }
 
-/* Optional fine-tuning */
-.navbar, .btn, .card-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-}
 
 p {
   font-weight: 300;
