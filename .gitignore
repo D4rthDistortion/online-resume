@@ -2,3 +2,4 @@
 wrap-main.sh
 public/
 backup/
+.vscode/
