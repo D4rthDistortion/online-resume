@@ -1,4 +1,169 @@
+/* Background for entire page */
 html {
-    background-color: beige;
-    font-family: "Newsreader", serif;
+  background-color: rgb(240, 240, 226);
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(240, 240, 226);
+    color: #2E2E2E;
+    font-family: 'Segoe UI', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  /* Navbar override */
+  .navbar {
+    background-color: #A3C4BC !important;
+    border-bottom: 4px solid #888; /* Adjust color and thickness */
+    background-color: rgb(240, 240, 226); /* match your theme */
+  }
+  
+  /* Navbar brand + links */
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: #2E2E2E !important;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #6C757D !important; /* muted gray hover */
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #2E2E2E;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+  /* Buttons */
+  .btn-primary {
+    background-color: #E3D5CA;
+    border-color: #E3D5CA;
+    color: #2E2E2E;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d6c4b8;
+    border-color: #d6c4b8;
+  }
+  
+  /* Section headers */
+  h2, h5 {
+    color: #2E2E2E;
+  }
+  
+  /* Inputs */
+  input, textarea {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #2E2E2E;
+  }
+  
+  .btn-custom {
+  background-color: #A3C6C4 !important; /* soft teal */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #8DB3B1;
+  color: #ffffff;
+}
+
+.contact-main {
+  background-color: rgb(240, 240, 226)
+}
+
+.soft-bg {
+  background-color: rgb(240, 240, 226);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.bg-accent {
+  background-color: e9ecef; /* light gray from Bootstrap palette */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tech-card-wrapper {
+  position: relative;
+  padding: 1rem;
+}
+
+.tech-card-bg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #8DB3B1;
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.tech-card {
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.tech-card, .card, .custom-section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-card:hover, .card:hover, .custom-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+
+body, li, label, placeholder, p, small{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-link, .btn, footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+
+p {
+  font-weight: 300;
+}
+
+footer {
+  animation: fadeInUp 1.2s ease-in-out;
 }
